@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { response } from '../response';
+import Table from "./Table"
 
-const Name = () => (
-  <button className="btn btn-primary name" name="name">Name</button>
-);
+export default class Name extends Component {
+  constructor() {
+    super();
+    this.state = {
+      contacts: response['list'].sort((a,b) => a.name > b.name ? 1 : -1)
+    }
+  }
 
-export default Name;
+  render() {
+    return(
+      <Table />
+    )
+  }
+}

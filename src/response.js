@@ -1,6 +1,8 @@
-export const userData = [
+export const response = {
+  list:
+  [
   {
-    "rank": 3,
+    "rank": 300,
     "points": 3123,
     "name": "Marlana J. Huff",
     "age": 41
@@ -149,4 +151,5 @@ export const userData = [
     "name": "Felix M. Seeber",
     "age": 39
   }
-];
+]
+};

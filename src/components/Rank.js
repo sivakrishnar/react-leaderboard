@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-const Rank = () => (
-  <button className="btn btn-primary rank" name="rank">Rank</button>
-);
+export default class Rank extends Component {
 
-export default Rank;
+  render() {
+    return(
+        <button className="btn btn-primary" onClick={() => this.setState({sortedBy: 'rank'})}>Rank</button>
+    )
+  }
+}
